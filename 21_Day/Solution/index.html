@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>30DaysOfJavaScript:21 Day </title>
+</head>
+
+<body>
+    <p id="p1">This is first paragraph.</p>
+    <p id="p2">This is second paragraph.</p>
+    <p id="p3">This is third paragraph.</p>
+    <p id="p4">This is fourth paragraph.</p>
+
+    <script type="">
+        let p=document.querySelector("p");
+        let ids1=document.querySelector("#p1");
+        let ids2=document.querySelector("#p2");
+        let ids3=document.querySelector("#p3");
+        let ids4=document.querySelector("#p4");
+
+        let nodeList=document.querySelectorAll('p');
+        for (var i=0;i<nodeList.length;i++){
+            console.log(nodeList[i].textContent);
+        }
+
+        ids4.innerHTML="<b>Fourth Paragraph</b>"
+
+        for (var i=0;i<nodeList.length;i++){
+            nodeList[i].setAttribute("class","parag"+i);
+            nodeList[i].setAttribute("id","paragraph"+i);
+        }
+
+        // level 2
+
+        for (var i=0;i<nodeList.length;i++){
+            nodeList[i].style.color="yellow";
+            nodeList[i].style.backgroundColor="purple";
+            nodeList[i].style.border="1px solid green";
+            nodeList[i].style.fontSize="48px";
+            nodeList[i].style.fontFamily="Arial";
+
+        }
+
+        const nodes=document.querySelectorAll("p");
+        nodes.forEach((node,index)=>{
+            if (index%2==0){
+                node.style.color='red';
+            }
+            else{
+                node.style.color='green';
+            }
+        }    
+        );
+        
+    </script>
+</body>
+</html>

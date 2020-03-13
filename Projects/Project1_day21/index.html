@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript for Everyone:DOM</title>
+  </head>
+
+  <style>
+      body{
+          background-color:floralwhite;
+        font-family:Arial;
+          text-align: center;
+      }
+      li{
+          list-style-type: none;
+      }
+
+      .wrapper h1{
+          font-family:Helvetica;
+      }
+      .wrapper h2{
+          color: rgb(30, 70 , 103);
+          font-size: 24px;
+          font-weight: 100;
+          text-decoration: underline;
+
+      }
+      ul {
+          margin:0 auto;
+          max-width: 700px;
+      }
+      ul li{
+          text-align: left;
+          background-color:rgb(220,82,82);
+          padding:20px;
+          margin:10px;
+      }
+      #dateTime{
+          margin:0 auto;
+         letter-spacing: 1.2px;
+          max-width: 220px;
+          padding:10px;
+          margin-bottom: 20px;
+          background-color: burlywood;
+      }
+  </style>
+  <body>
+    <div class="wrapper">
+        <h1>Asabeneh Yetayeh challenges in <span>2020</span></h1>
+        <h2>30DaysOfJavaScript Challenge</h2>
+
+        <p id="dateTime">start</p>
+
+        <ul>
+            <li>30DaysOfPython Challenge Done</li>
+            <li>30DaysOfJavaScript Challenge Ongoing</li>
+            <li>30DaysOfReact Challenge Coming</li>
+            <li>30DaysOfFullStack Challenge Coming</li>
+            <li>30DaysOfDataAnalysis Challenge Coming</li>
+            <li>30DaysOfReactNative Challenge Coming</li>
+            <li>30DaysOfMachineLearning Challenge Coming</li>
+        </ul>
+    </div>
+
+    <script>
+
+        function randomgenerator(){
+            return "rgb("+Math.floor(Math.random()*256)+","+Math.floor(Math.random()*256)+","+Math.floor(Math.random()*256)+")";
+        }
+        const li=document.querySelectorAll("li");
+        li[0].style.backgroundColor='rgb(72,167,73)';
+        li[1].style.backgroundColor='rgb(236,231,49)';
+
+        let year=document.querySelector("h1 > span");
+        year.style.fontSize="3em";
+        year.style.fontWeight='700';
+
+        setInterval(function(){
+            year.style.color=randomgenerator();
+        },1000);
+
+        let datetime=document.getElementById("dateTime");
+        
+        setInterval(function(){
+            let data=Dategiver();
+            datetime.textContent=data;
+            datetime.style.backgroundColor=randomgenerator();
+        },1000);
+        
+        
+        function Dategiver(){
+            let date=new Date();
+            let months={1:'January',2:'February',3:'March',4:'April',5:'May',6:"June",
+        7:"July",8:'August',9:'September',10:'October',11:'November',12:'December'};
+        let monthName="";
+            let month1=date.getMonth()+1;
+            let date1=date.getDate();
+            let year=date.getFullYear();
+            for (var i=1;i<13;i++){
+                if (month1==i){
+                    monthName=months[i];
+                }
+            }
+            let hour=(date.getHours())<10?"0"+date.getHours():date.getHours();
+            let min=(date.getMinutes())<10?"0"+date.getMinutes():date.getMinutes();
+            let sec=(date.getSeconds())<10?"0"+date.getSeconds():date.getSeconds();
+            return `${monthName},${date1} ${year} ${hour}:${min}:${sec}`;
+        }
+
+    </script>
+  </body>
+</html>
