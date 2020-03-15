@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>30DaysOfJavaScript:21 Day </title>
+</head>
+<style>
+    body{
+        margin: 0 auto;
+       text-align: center;
+       font-family: Arial, Helvetica, sans-serif;
+       line-height: 0.3;
+       max-width: 700px;
+    }
+    #div1{
+        margin-top: 40px;
+    }
+    .box{
+        text-align: center;
+        font-size: 32px;
+        font-weight: 700;
+        color:white;
+        display: inline-block;
+        margin:3px;
+    }
+    .box p{
+        margin-top:20px;
+    }
+
+</style>
+
+<body>
+
+    <h1>Number Generator</h1>
+    <p><u>30DaysOfJavaScript.DOM Day 2</p>
+    <p>Author: Hina Khadim</u></p>
+
+    <div id='div1'></div>
+
+        <script>
+
+        const isPrime = num => {
+            for(let i = 2, s = Math.sqrt(num); i <= s; i++)
+                if(num % i === 0) return false; 
+            return num > 1;
+        }
+
+        const isEven=num=>{
+            return num%2==0;
+        }
+
+        const isOdd=num=>{
+            return num%2!==0;
+        }
+
+            let div=document.getElementById('div1');
+            for (var i=0;i<=101;i++){
+                let box=document.createElement('div');
+                box.className="box";
+                box.innerHTML='<p>'+i+'</p>';
+                box.style.width='100px';
+                if (isPrime(i)){
+                    box.style.backgroundColor='#DE3204';
+                }
+                else if(isEven(i)){
+                    box.style.backgroundColor='#54C211';                    
+                }
+                else if (isOdd(i)){
+                    box.style.backgroundColor='#EFE80A';
+                }
+                box.style.height='50px';
+                div.appendChild(box);
+            }
+        </script>
+
+</body>
+</html>
