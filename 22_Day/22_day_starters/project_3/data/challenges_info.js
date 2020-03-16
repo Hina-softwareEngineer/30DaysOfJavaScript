@@ -41,8 +41,8 @@ const asabenehChallenges2020 = {
     'D3.js'
   ],
   author: {
-    firstName: 'Asabeneh',
-    lastName: 'Yetayeh',
+    firstName: 'Hina',
+    lastName: 'Khadim',
     titles: [
       ['🌱', 'Educator'],
       ['💻', 'Programmer'],
@@ -60,16 +60,16 @@ const asabenehChallenges2020 = {
       {
         social: 'LinkedIn',
         url: 'https://www.linkedin.com/in/asabeneh/',
-        fontawesomeIcon: '<i class="fab fa-linkedin">'
+        fontawesomeIcon: '<i class="fa fa-linkedin">'
       },
       {
         social: 'Twitter',
         url: 'https://twitter.com/Asabeneh',
-        fontawesomeIcon: '<i class="fab fa-twitter-square"></i>'
+        fontawesomeIcon: '<i class="fa fa-twitter-square"></i>'
       },
       {
         social: 'Github',
-        fontawesomeIcon: '<i class="fab fa-github-square"></i>',
+        fontawesomeIcon: '<i class="fa fa-github-square"></i>',
         url: 'https://github.com/Asabeneh'
       },
       {
