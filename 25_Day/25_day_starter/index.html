@@ -7,7 +7,60 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>World Countries Data</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/style.css" />
+  
+    <style>
+        body{
+            font-family: "Montserrat";
+            text-align: center;
+            margin:0 auto;
+            background-color: #D0D3D4 ;
+        }
+        h2{
+            font-size: 3em;
+            letter-spacing: 2px;
+            font-weight: 600;
+            color:#FFC300 ;
+            margin:10px;
+        }
+        #countries p{
+            margin:0;
+        }
+        .wrapper .graph-buttons button{
+            border:2px solid #FFC300;
+            font-size: 20px;
+            margin:5px;
+            padding:10px;
+            margin:20px;
+            background-color:#FFC300;
+            color:black;
+        }
+        .graph-buttons{
+            margin-top: 15px;
+            box-sizing: border-box;
+            /* box-shadow: 0 0 8px 2px #D0D3D4  inset; */
+            border:8px solid rgb(228, 231, 232);
+            height: 125px;
+            background-color: #ECF0F1;
+        }
+        .graph-title{
+            background-color: #ECF0F1;
+        }
+        .graph-wrapper div{
+            margin:0 auto;
+            max-width: 1300px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+       h4{
+           margin:0 auto;
+           margin-bottom: 5px;
+           padding-bottom: 10px;
+           width: 800px;
+
+       }
+    </style>
+
 </head>
 
 <body>
@@ -22,8 +75,9 @@
             <div class="graph-buttons">
                 <button class="population">Population</button>
                 <button class="languages">Languages</button>
-            </div>
+            
             <h4 class="graph-title"></h4>
+        </div>
             <div class="graphs">
                 <div class="graph-wrapper" id="stat"></div>
             </div>
@@ -31,7 +85,7 @@
     </main>
 
     <script src="./data/countries_data.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="./scripts/main.js"></script>
 
 </body>
 

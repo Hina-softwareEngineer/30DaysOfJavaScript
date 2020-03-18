@@ -150,7 +150,7 @@ function getMostPopulated(){
     return lang;
 }
 let languages=getMostPopulated();
-let countr=and.sort(function(a,b){if (b.population>a.population){return 1}if (a.population>b.population){return -1}return 0;});
+let countr=languages.sort(function(a,b){if (b.population>a.population){return 1}if (a.population>b.population){return -1}return 0;});
 for (var i=0;i<10;i++){
     console.log(countr[i]);
 }
