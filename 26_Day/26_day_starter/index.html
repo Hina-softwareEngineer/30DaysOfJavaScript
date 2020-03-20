@@ -69,9 +69,25 @@
     .buttons{
         display: inline-flex;
     }
+    .active{
+        outline:none;
+        border:1px solid rgb(65, 11, 133 );
+        background-color: rgb(87, 17, 177);
+        
+    }
+    input{
+        text-align: center;
+    }
+    input:focus{
+        outline:none;
+        text-align: left;
+        padding-left:20px;
+    }
     .input1{
         margin:15px;
+        
     }
+    
     .fa{
         font-size: 30px;
         margin: 10px;
@@ -82,6 +98,27 @@
         padding:10px;
         border-radius: 30px;
         font-size: 20px;
+    }
+    .country{
+        font-size: 20px;
+        margin:0 auto;
+        display:grid;
+        grid-template-columns: 200px 200px 200px 200px 200px 200px ;
+        box-sizing: border-box;
+        
+        margin-top:40px;
+        width: 1300px;
+    }
+    .column{
+        height: 200px;     
+        margin-left:40px;
+        margin-top:10px;
+        border-radius: 5px;
+        border:1px solid whitesmoke; 
+        background-image: url('./images/map_image.jpg');
+        background-repeat: no-repeat;  
+        background-size: cover;
+        background-position-x: -40px;             
     }
 </style>
 
