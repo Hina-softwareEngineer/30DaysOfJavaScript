@@ -3,13 +3,88 @@
 
 <head>
     <title>30DaysOfJavaScript:11 Day </title>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Public+Sans&display=swap" rel="stylesheet">
 </head>
+    <style>
+        body{
+            margin:0;
+            font-family: 'Public Sans', sans-serif;
+            letter-spacing: 1.1px;
+        }
+        .container{
+            max-width: 1000px;
+            margin:0 auto;
+            margin-bottom:50px;
+        }
+        h1{
+            font-size: 5em;
+            letter-spacing: 18px;
+            font-weight: 300;
+        }
+        .signs{
+            background-color: lightpink;
+            padding:20px;
+            font-size: 24px;
+        }
+        .signs h4{
+            
+            display: inline-flex;
+            margin:0;
+            transition: transform 1s linear 1s;
+
+        }
+        
+        .three{
+            margin:30px;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            margin-bottom: 80px;
+        }
+        .three div{
+            max-width: 225px;
+            font-size: 24px;
+            padding:60px 10px;
+            background-color:#F7F9F9;
+            border:1px solid #F0F3F4;
+            border-radius: 5px;
+            transition: transform 1s linear 0.2s;
+        }
+        .three div:hover{
+            transform:scale(1.2);
+            background-color: lightpink;
+            border:1px solid palevioletred;
+        }
+        .tech{
+            font-size: 2.5em;
+            font-weight: 600;
+        }
+    </style>
+
 
 <body>
-    <h1>30DaysOfJavaScript:11 Day</h1>
-    <h2>Destructuring and Spread</h2>
+    <div class="container">
+   <!-- <p>&#128293</p> -->
+   <h1>Asabeneh Yetayeh</h1>
 
-    <script src="./data/countries_data.js"></script>
+   <div class="signs">
+       <span class="spans">&#128293</span><h4 class="techs"> Motivator</h4>
+   </div>
+
+   <p>I am Hina Khadim. I am instructor, developer,motivator and content creator. I love educating people and creating educational
+       materials. IN January 2019, I also created a teaching material <strong>JavaScript For Everyone</strong>. In December 2019, I created <strong>30Days Of Python</strong>
+        challenge and in January 2020 <strong>30 Days Of JavaScript</strong> challenge.
+   </p>
+
+   <div class="three">
+       <div>JAVASCRIPT FOR EVERYONE</div>
+       <div>30 DAYS OF PYTHON</div>
+       <div>30 DAYS OF JAVASCRIPT</div>
+   </div>
+
+   <p>The technologies I teach <span class=tech></span></p>
+</div>
     <script src="./scripts/main.js"></script>
 
 </body>
