@@ -31,10 +31,26 @@
             
             display: inline-flex;
             margin:0;
-            transition: transform 1s linear 1s;
-
+            margin-left:-10px;
+            transition: transform 1s linear 1s; 
+            animation-name: appear;
+            animation-duration: 1.5s;
+            animation-delay: 0s;
+            animation-iteration-count: infinite; 
+            
         }
-        
+@keyframes appear{
+    0%{
+        opacity:0;
+        transform:translateX(0px);
+    }
+    100%{ 
+        opacity: 1;
+        transform: translateX(50px);
+    }
+}
+
+
         .three{
             margin:30px;
             display: flex;
@@ -57,9 +73,19 @@
             border:1px solid palevioletred;
         }
         .tech{
+            animation:fade 1s 0s forwards;
+            animation-iteration-count: infinite;
             font-size: 2.5em;
             font-weight: 600;
         }
+@keyframes fade{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
     </style>
 
 
@@ -69,7 +95,7 @@
    <h1>Asabeneh Yetayeh</h1>
 
    <div class="signs">
-       <span class="spans">&#128293</span><h4 class="techs"> Motivator</h4>
+       <span class="spans"></span><h4 class="techs"></h4>
    </div>
 
    <p>I am Hina Khadim. I am instructor, developer,motivator and content creator. I love educating people and creating educational

@@ -36,7 +36,6 @@ setInterval(function(){
     spans.innerHTML=techs[i][0];
     tech.textContent=techs[i][1];
     i=i+1;
-
     
     if (i==length1){
         i=0;
