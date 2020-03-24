@@ -3,11 +3,80 @@
 
 <head>
     <title>30DaysOfJavaScript:30 </title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+<style>
+    body{
+        margin:0;
+        font-family: Montserrat;
+    }
+    .main{
+        text-align: center;
+        background-color: rgb(228, 231, 232);
+    }
+    .header{
+        padding:5px;
+    }
+    h1{
+        color:#FFC300;
+        letter-spacing: 2px;
+        margin:0px;
+        font-size: 3em;
+        font-weight: 600;
+    }
+    .header h3{
+        font-weight: 500;
+        margin:2px;
+    }
+    .satisfied{
+        margin:2px;
+        color:#FFC300;
+        font-weight: 400;
+        font-style: italic;
+    }
+    .light{
+        margin-top:10px;
+        background-color:#F4F6F7 ;
+    }
+    .light input:focus{
+        outline: none;
+    }
+    .light input{
+        font-size: 20px;
+        padding:10px;
+        width: 1100px;
+        border-radius: 25px;
+        margin:20px;
+    }
+    .light button{
+        font-size:12px;
+        background-color:#FFC300;
+        padding:5px;
+        border:none;
+    }
+</style>
 
 <body>
-   
+    <div class="main">
+    <div class="header">
+    <h1>World Countries Data</h1>
+    <h3>Currently, we have 250 countries</h3>
+    <p class="satisfied">hello</p>
+    </div>
 
+    <div class="light">
+        <input type="text"><br>
+        <button>NAME <span class="order"></span></button>
+        <button>CAPITAL <span class="order"></span></button>
+        <button>POPULATION <span class="order"></span></button>
+        <button><i class="fa fa-bar-chart"></i></button>
+    </div>
+
+    <div class="box">
+
+    </div>
+</div>
     <script src="./data/countries_data.js"></script>
     <script src="./scripts/main.js"></script>
 
