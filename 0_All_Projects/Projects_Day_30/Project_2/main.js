@@ -67,7 +67,7 @@ inp[1].addEventListener("input",function(e){
         if (result){
             res2=true;
             lastName.style.display="none";
-            inp[1].style.border="2px solid #51C37C";
+            inp[1].style.border="3px solid #51C37C";
             inp[1].style.boxShadow="none";
         }
         else{
@@ -96,7 +96,7 @@ inp[2].addEventListener("input",function(e){
         if (result){
             res3=true;
             email.style.display="none";
-            inp[2].style.border="2px solid #51C37C";
+            inp[2].style.border="3px solid #51C37C";
             inp[2].style.boxShadow="none";
         }
         else{
@@ -124,7 +124,7 @@ inp[3].addEventListener("input",function(e){
         if (result){
             res4=true;
             password.style.display="none";
-            inp[3].style.border="2px solid #51C37C";
+            inp[3].style.border="3px solid #51C37C";
             inp[3].style.boxShadow="none";
         }
         else{
@@ -152,7 +152,7 @@ inp[4].addEventListener("input",function(e){
         if (result){
             res5=true;
             phone.style.display="none";
-            inp[4].style.border="2px solid #51C37C";
+            inp[4].style.border="3px solid #51C37C";
             inp[4].style.boxShadow="none";
         }
         else{
@@ -181,7 +181,7 @@ inp[5].addEventListener("input",function(e){
         if (result){
             res6=true;
             bio.style.display="none";
-            inp[5].style.border="2px solid #51C37C";
+            inp[5].style.border="3px solid #51C37C";
             inp[5].style.boxShadow="none";
         }
         else{
